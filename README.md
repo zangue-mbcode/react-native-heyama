@@ -1,67 +1,67 @@
 # Heyama Mobile - React Native + Expo
 
-Application mobile native modern para la gestión de objetos con actualizaciones en tiempo real.
+Modern native mobile application for object management with real-time updates.
 
-## 📱 Características
+## 📱 Features
 
-- **Interfaz Moderna e Intuitiva** - Diseño iOS-inspired minimalista y limpio
-- **Listado de Objetos** - Visualización fluida con pull-to-refresh
-- **CRUD Completo** - Crear, leer, actualizar y eliminar objetos
-- **Tiempo Real** - Actualizaciones en vivo mediante Socket.IO
-- **Upload de Imágenes** - Seleccionar de cámara o galería
-- **Validación de Formularios** - React Hook Form + Zod
-- **Design System** - Componentes reutilizables y tokens de diseño
-- **Feedback Haptic** - Retroalimentación táctil en interacciones
-- **Skeleton Loaders** - Animaciones de carga elegantes
-- **Responsive Design** - Adaptativo para diferentes tamaños de pantalla
+- **Modern & Intuitive Interface** - iOS-inspired minimalist and clean design
+- **Object Listing** - Smooth visualization with pull-to-refresh
+- **Full CRUD** - Create, read, update and delete objects
+- **Real-Time** - Live updates via Socket.IO
+- **Image Upload** - Select from camera or gallery
+- **Form Validation** - React Hook Form + Zod
+- **Design System** - Reusable components and design tokens
+- **Haptic Feedback** - Tactile feedback on interactions
+- **Skeleton Loaders** - Elegant loading animations
+- **Responsive Design** - Adaptive for different screen sizes
 
-## 🛠️ Stack Técnico
+## 🛠️ Tech Stack
 
 - **Framework**: React Native 0.81.5
-- **Framework Expo**: Expo 54.0
+- **Expo Framework**: Expo 54.0
 - **Routing**: Expo Router 6.0
 - **TypeScript**: 5.9.2
 - **HTTP**: Axios
 - **Real-time**: Socket.IO Client
-- **Formularios**: React Hook Form + Zod
-- **Imágenes**: expo-image-picker
+- **Forms**: React Hook Form + Zod
+- **Images**: expo-image-picker
 - **Haptics**: expo-haptics
 - **Icons**: @expo/vector-icons
 
-## 🚀 Instalación Rápida
+## 🚀 Quick Installation
 
-### Prerequisitos
+### Prerequisites
 
-- Node.js 18+ y npm/yarn
+- Node.js 18+ and npm/yarn
 - Expo CLI: `npm install -g expo-cli`
-- iOS 12.0+ o Android 8.0+
+- iOS 12.0+ or Android 8.0+
 
 ### Setup
 
-1. **Instalar dependencias**
+1. **Install dependencies**
 ```bash
 npm install
 ```
 
-2. **Configurar variables de entorno**
+2. **Configure environment variables**
 ```bash
 cp .env.example .env.local
-# Editar .env.local con tus valores
+# Edit .env.local with your values
 # EXPO_PUBLIC_API_URL=https://nestjs-heyama-api-test.onrender.com
 # EXPO_PUBLIC_SOCKET_URL=https://nestjs-heyama-api-test.onrender.com
 ```
 
-3. **Iniciar la aplicación**
+3. **Start the application**
 ```bash
 npm start
 
-# O directamente:
+# Or directly:
 npm run ios       # iOS
 npm run android   # Android
 npm run web       # Web
 ```
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 app/
@@ -97,18 +97,18 @@ types/
 └── index.ts                 # TypeScript types
 ```
 
-## 🔌 Configuración de API
+## 🔌 API Configuration
 
-Variables de entorno requeridas:
+Required environment variables:
 
 ```env
 EXPO_PUBLIC_API_URL=https://nestjs-heyama-api-test.onrender.com
 EXPO_PUBLIC_SOCKET_URL=https://nestjs-heyama-api-test.onrender.com
 ```
 
-La API espera endpoints en:
-- `GET/POST /objects` - Listado y creación
-- `GET/DELETE/PATCH /objects/{id}` - Detalle, eliminación, actualización
+The API expects endpoints at:
+- `GET/POST /objects` - List and creation
+- `GET/DELETE/PATCH /objects/{id}` - Detail, deletion, update
 
 ## 🌐 Socket.IO Events
 
@@ -120,28 +120,28 @@ socket.on('objectUpdated', (object) => { /* ... */ })
 
 ## 🎨 Design System
 
-### Colores
+### Colors
 ```
-primary: #007AFF (Azul iOS)
-secondary: #8B5CF6 (Púrpura)
-danger: #FF3B30 (Rojo)
+primary: #007AFF (iOS Blue)
+secondary: #8B5CF6 (Purple)
+danger: #FF3B30 (Red)
 background: #FAFAFA
 surface: #FFFFFF
 ```
 
-### Espaciado
+### Spacing
 ```
 xs: 4px, sm: 8px, md: 12px, lg: 16px, xl: 20px, xxl: 24px
 ```
 
-## 💬 Permisos Requeridos
+## 💬 Required Permissions
 
 - **iOS**: Camera, Photo Library
 - **Android**: CAMERA, READ/WRITE_EXTERNAL_STORAGE, INTERNET
 
-Expo maneja automáticamente la mayoría de permisos en tiempo de ejecución.
+Expo automatically handles most permissions at runtime.
 
-## 📚 Documentación
+## 📚 Documentation
 
 - [React Native](https://reactnative.dev)
 - [Expo](https://docs.expo.dev)
@@ -158,13 +158,13 @@ npm install
 ```
 
 **Error: API connection**
-- Verificar que API_URL está configurada correctamente
-- Asegurar que backend está corriendo
+- Verify that API_URL is configured correctly
+- Ensure backend is running
 
 **Error: Socket connection**
-- Verificar SOCKET_URL
-- Verificar CORS en servidor
+- Verify SOCKET_URL
+- Check CORS on server
 
-## 📝 Licencia
+## 📝 License
 
 MIT License
